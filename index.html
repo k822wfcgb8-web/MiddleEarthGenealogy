@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Middle-earth Genealogy</title>
+<meta name="description" content="Family trees of the Elves, Men, Dwarves and Hobbits of Middle-earth, drawn from The Hobbit, The Lord of the Rings and The Silmarillion.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#/">
+    <span class="brand-mark" aria-hidden="true">❦</span>
+    <span class="brand-text">Middle-earth Genealogy</span>
+  </a>
+  <nav class="main-nav" id="main-nav"></nav>
+  <div class="search">
+    <input id="search" type="search" placeholder="Find a name…" autocomplete="off" aria-label="Search for a person">
+    <ul id="search-results" class="search-results" hidden></ul>
+  </div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <p>An unofficial fan reference. Names, dates and relationships are drawn from <em>The Hobbit</em>, <em>The Lord of the Rings</em> (including its Appendices) and <em>The Silmarillion</em>; the biographies are original summaries. First Age years follow the chronology commonly used from Tolkien's annals. Not affiliated with the Tolkien Estate or any publisher.</p>
+</footer>
+
+<dialog id="bio" class="bio">
+  <button class="bio-close" id="bio-close" aria-label="Close">×</button>
+  <div id="bio-body"></div>
+</dialog>
+
+<script src="js/core.js"></script>
+<script src="js/data/elves.js"></script>
+<script src="js/data/men.js"></script>
+<script src="js/data/dwarves.js"></script>
+<script src="js/data/hobbits.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
